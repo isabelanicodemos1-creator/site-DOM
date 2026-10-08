@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alteração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ateração de texto e de estilos</h1>
+        
+        <nav>
+            <ul>
+                 <li><a target="_blank" href="O que e.html"> Inicio
+                 </a></li>
+
+                <li><a target="_blank" href="relacao.html">A relação</a></li>
+
+               <li><a target="_blank" href="alteracao.html">alteração</a> </li>
+                
+               <li><a target="_blank" href="elementos.html">Elementos</a></li>
+
+               <li><a target="_blank" href="eventos.html">Eventos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="Textos">
+            <h1>Alteração de textos</h1>
+            <br><p>
+                A alteração de textos no DOM com JavaScript consiste em localizar um elemento HTML e modificar o conteúdo dele através de propriedades como <strong>textContent, innerText ou innerHTML.</strong>
+            </p><br>
+            <p>Alterando texto com textContent <br>
+           ' < p id="mensagem" >Olá, mundo!< /p > '
+            </p><br>
+            <p>innerHTML <br>
+            A diferença fica clara:</p><br>
+            <p>
+                <strong>elemento.innerHTML</strong> = "< strong>Olá!< / strong >"; </p> <br>
+                <p>faz o navegador interpretar o HTML, resultando em:
+
+                Olá!
+
+                Por isso, <strong>innerHTML </strong>deve ser usado com cuidado quando o conteúdo vem de usuários ou de fontes não confiáveis, pois pode introduzir HTML/JavaScript indesejado.
+            </p>
+        </div>
+
+        <div class="estilo">
+            <h1>Alteração de estilo</h1>
+            <p>
+                A alteração de estilo no DOM com JavaScript funciona selecionando um elemento HTML e modificando diretamente o seu atributo inline style ou alterando as suas classes CSS.
+            </p>
+            <h3>Como alterar o estilo inline com a propriedade style</h3><br>
+            
+             <p>  Você pode mudar o estilo de um elemento   acessando a propriedade .style do objeto correspondente no DOM.</p> <br>
+            
+                <p> <strong>Seleção:</strong> Primeiro, você encontra o elemento usando métodos como document.getElementById ou document.querySelector</p><br>
+
+                <p><strong>Modificação:</strong> Você chama .style seguido da propriedade de estilo desejada.</p><br>
+
+                <p><strong>Nomenclatura (CamelCase):</strong> Nomes de propriedades CSS com hífen (como background-color) perdem o hífen e usam letra maiúscula na palavra seguinte (backgroundColor).</p>
+
+                <p>
+                   <strong>Exemplo Pratico </strong> <br>
+                </p>
+
+                    <h4> " const meuBotao = document.getElementById("botao");
+                    meuBotao.style.backgroundColor = "blue";
+                    meuBotao.style.color = "white"; " 
+                    </h4>
+        </div>
+
+    </main>
+    
+</body>
+</html>
